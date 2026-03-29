@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FastField — Football Field Booking</title>
+  <meta name="description"
+    content="Book your artificial grass football field online. Easy scheduling, instant confirmation, and hassle-free payments." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" id="nav-logo">
+        <span class="logo-icon">⚽</span>
+        <span class="logo-text">Fast<span class="accent">Field</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+        <li><a href="#booking" class="nav-link" data-section="booking">Book Now</a></li>
+        <li><a href="#features" class="nav-link" data-section="features">Features</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <img src="hero-bg.png" alt="Football field" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge animate-fade-down">
+        <span class="material-symbols-outlined">sports_soccer</span>
+        Premium Artificial Grass
+      </div>
+      <h1 class="hero-title animate-fade-up">
+        Football Field<br /><span class="gradient-text">Booking</span>
+      </h1>
+      <p class="hero-subtitle animate-fade-up delay-1">
+        Reserve your perfect pitch in seconds. Premium artificial grass, floodlit fields, and seamless online booking.
+      </p>
+      <div class="hero-actions animate-fade-up delay-2">
+        <a href="#booking" class="btn btn-primary btn-lg" id="hero-book-btn">
+          <span class="material-symbols-outlined">calendar_month</span>
+          Book Now
+        </a>
+        <a href="#features" class="btn btn-ghost btn-lg" id="hero-learn-btn">
+          Learn More
+          <span class="material-symbols-outlined">arrow_downward</span>
+        </a>
+      </div>
+      <div class="hero-stats animate-fade-up delay-3">
+        <div class="stat">
+          <span class="stat-value" id="hero-stat-bookings">500+</span>
+          <span class="stat-label">Bookings</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">4.9★</span>
+          <span class="stat-label">Rating</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">24/7</span>
+          <span class="stat-label">Support</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FEATURES ═══════════ -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Why Choose Us</span>
+        <h2 class="section-title">Premium <span class="gradient-text">Experience</span></h2>
+        <p class="section-subtitle">Everything you need for the perfect game</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <span class="material-symbols-outlined">grass</span>
+          </div>
+          <h3>Premium Turf</h3>
+          <p>FIFA-quality artificial grass that feels just like playing on a professional pitch.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <span class="material-symbols-outlined">light_mode</span>
+          </div>
+          <h3>Floodlit Fields</h3>
+          <p>Bright LED floodlights for perfect visibility during evening and night matches.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <span class="material-symbols-outlined">schedule</span>
+          </div>
+          <h3>Instant Booking</h3>
+          <p>Book your slot in under 30 seconds with our streamlined online system.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <span class="material-symbols-outlined">local_parking</span>
+          </div>
+          <h3>Free Parking</h3>
+          <p>Complimentary parking for up to 20 vehicles right next to the field.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ BOOKING ═══════════ -->
+  <section id="booking" class="booking">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Reserve Your Spot</span>
+        <h2 class="section-title">Book Your <span class="gradient-text">Field</span></h2>
+        <p class="section-subtitle">Select a date, pick a time slot, and you're all set!</p>
+      </div>
+
+      <div class="booking-layout">
+        <!-- LEFT: Time Slots -->
+        <div class="booking-slots-panel glass-card" id="slots-panel">
+          <div class="panel-header">
+            <span class="material-symbols-outlined">calendar_today</span>
+            <div>
+              <h3>Available Slots</h3>
+              <p class="panel-hint">Select a date to view availability</p>
+            </div>
+          </div>
+          <div class="date-picker-inline">
+            <label for="slot-date-picker">Choose Date</label>
+            <input type="date" id="slot-date-picker" class="input-field" />
+          </div>
+          <div class="slots-grid" id="slots-grid">
+            <div class="slots-placeholder">
+              <span class="material-symbols-outlined">event_available</span>
+              <p>Pick a date above to see time slots</p>
+            </div>
+          </div>
+          <div class="slots-legend">
+            <span class="legend-item"><span class="legend-dot available"></span> Available</span>
+            <span class="legend-item"><span class="legend-dot selected"></span> Selected</span>
+            <span class="legend-item"><span class="legend-dot booked"></span> Booked</span>
+          </div>
+        </div>
+
+        <!-- RIGHT: Booking Form -->
+        <div class="booking-form-panel glass-card" id="form-panel">
+          <div class="panel-header">
+            <span class="material-symbols-outlined">edit_note</span>
+            <div>
+              <h3>Booking Details</h3>
+              <p class="panel-hint">Fill in your information</p>
+            </div>
+          </div>
+          <form id="booking-form" novalidate>
+            <div class="form-group">
+              <label for="customer-name">
+                <span class="material-symbols-outlined">person</span>
+                Full Name
+              </label>
+              <input type="text" id="customer-name" class="input-field" placeholder="e.g. John Doe" required />
+              <span class="field-error" id="name-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="customer-phone">
+                <span class="material-symbols-outlined">phone</span>
+                Phone Number
+              </label>
+              <input type="tel" id="customer-phone" class="input-field" placeholder="e.g. 081-234-5678" required />
+              <span class="field-error" id="phone-error"></span>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="booking-date">
+                  <span class="material-symbols-outlined">calendar_month</span>
+                  Date
+                </label>
+                <input type="date" id="booking-date" class="input-field" required />
+                <span class="field-error" id="date-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="booking-time">
+                  <span class="material-symbols-outlined">schedule</span>
+                  Time Slot
+                </label>
+                <input type="text" id="booking-time" class="input-field" placeholder="Select from slots" readonly
+                  required />
+                <span class="field-error" id="time-error"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>
+                <span class="material-symbols-outlined">payments</span>
+                Payment Information
+              </label>
+              <div class="payment-info-grid">
+                <div class="payment-qr-card glass-card">
+                  <img src="payment_qr_code_placeholder_1774817646468.png" alt="Scan to Pay" class="qr-image" />
+                  <div class="qr-details">
+                    <p class="qr-bank">FastField Bank</p>
+                    <p class="qr-name">FastField Football Club</p>
+                    <span class="qr-badge">PromptPay Ready</span>
+                  </div>
+                </div>
+                <div class="file-upload-section">
+                  <label for="payment-slip">
+                    <span class="material-symbols-outlined">receipt_long</span>
+                    Upload Payment Slip
+                  </label>
+                  <div class="file-upload-zone" id="file-upload-zone">
+                    <input type="file" id="payment-slip" name="slip" accept="image/*" hidden />
+                    <div class="upload-content" id="upload-content">
+                      <span class="material-symbols-outlined upload-icon">cloud_upload</span>
+                      <p>Click or drag slip</p>
+                      <span class="upload-hint">PNG, JPG (Max 5MB)</span>
+                    </div>
+                    <div class="upload-preview" id="upload-preview" style="display:none">
+                      <img id="preview-img" alt="Payment slip preview" />
+                      <button type="button" class="btn-remove-file" id="remove-file">
+                        <span class="material-symbols-outlined">close</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="field-error" id="slip-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="booking-note">
+                <span class="material-symbols-outlined">sticky_note_2</span>
+                Additional Note <span class="optional">(optional)</span>
+              </label>
+              <textarea id="booking-note" class="input-field" rows="3" placeholder="Any special requests..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="submit-booking">
+              <span class="material-symbols-outlined">check_circle</span>
+              Confirm Booking
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ BOOKING CONFIRMATION MODAL ═══════════ -->
+  <div class="modal-overlay" id="confirmation-modal">
+    <div class="modal glass-card">
+      <div class="modal-success-icon">
+        <span class="material-symbols-outlined">verified</span>
+      </div>
+      <h2>Booking Confirmed!</h2>
+      <p class="modal-subtitle">Your field has been reserved successfully</p>
+      <div class="confirmation-details" id="confirmation-details"></div>
+      <button class="btn btn-primary btn-block" id="modal-close-btn">
+        <span class="material-symbols-outlined">home</span>
+        Back to Home
+      </button>
+    </div>
+  </div>
+
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">⚽</span>
+        <span class="logo-text">Fast<span class="accent">Field</span></span>
+      </div>
+      <p class="footer-copy">&copy; 2026 FastField. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

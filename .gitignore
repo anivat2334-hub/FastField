@@ -1,0 +1,13 @@
+# Dependency directories
+node_modules/
+
+# Environment variables (SECURITY - DO NOT REMOVE)
+.env
+
+# Local data and uploads
+data/*.json
+uploads/
+
+# OS generated files
+.DS_Store
+Thumbs.db
